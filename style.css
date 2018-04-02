@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  color: white;
+  font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 18px; }
+
+main {
+  height: 100vh;
+  min-height: 600px;
+  min-width: 560px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url("./images/background.jpeg") no-repeat center;
+  background-size: cover; }
+  main .main-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background: rgba(52, 80, 126, 0.9); }
+  main .main-info {
+    width: 85%;
+    position: relative;
+    z-index: 3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    main .main-info .main-info__text {
+      flex: 4; }
+      main .main-info .main-info__text .yellow-text {
+        color: #f0e353; }
+      main .main-info .main-info__text h2 {
+        margin-top: 100px;
+        padding-left: 5px;
+        border-left: solid #f0e353 3px; }
+        main .main-info .main-info__text h2 small {
+          font-size: 14px;
+          font-weight: normal; }
+    main .main-info .main-info__counter {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      border: solid white 2px; }
+      main .main-info .main-info__counter .num {
+        flex: 7;
+        font-size: 100px; }
+      main .main-info .main-info__counter p {
+        flex: 1; }
+  main .main-button {
+    position: relative;
+    z-index: 3;
+    height: 80px;
+    width: 40%;
+    color: #f0e353;
+    border: solid #f0e353 1px;
+    margin: 100px 0 20px 0;
+    text-align: center;
+    line-height: 80px;
+    font-size: 30px; }
+  main .main-button:hover {
+    background: #f0e353;
+    color: white;
+    border: solid white 1px; }
+  main .main-info__botom {
+    position: relative;
+    z-index: 3;
+    font-size: 14px; }
+  main .icon {
+    position: relative;
+    z-index: 3;
+    margin: 30px;
+    color: #a3b3cb;
+    transition-duration: 2s; }
+  main .icon:active {
+    transform: translateY(50px); }
+
+footer {
+  background: #55719f;
+  display: flex;
+  height: 35vh;
+  width: 100%;
+  min-height: 180px;
+  min-width: 560px; }
+  footer .right-box, footer .left-box {
+    height: 100%;
+    width: 50vw;
+    flex: 1;
+    border: solid #a3b3cb 1px;
+    display: flex;
+    align-items: center; }
+  footer .left-box .left-box__first {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    margin: 20px; }
+    footer .left-box .left-box__first .line {
+      height: 60px;
+      border: solid #a3b3cb 1px;
+      margin: 0 10px; }
+    footer .left-box .left-box__first .inner-first {
+      flex: 2;
+      height: 100%;
+      padding-right: 10px;
+      font-size: 42px; }
+    footer .left-box .left-box__first .inner-last {
+      flex: 1;
+      font-size: 12px; }
+  footer .left-box .left-box__second {
+    flex: 1;
+    margin: 20px; }
+  footer .right-box .right-box__first {
+    height: 85px;
+    width: 85px;
+    margin: 50px;
+    font-size: 40px;
+    border: solid #a3b3cb 3px;
+    border-radius: 50%;
+    text-align: center;
+    transform: rotate(45deg); }
+  footer .right-box .line {
+    width: 100%;
+    border: solid #a3b3cb 1px;
+    margin: 10px 0; }
+
+@media (min-width: 576px) {
+  main .main-button {
+    font-size: 12px; }
+  main .main-info__botom {
+    font-size: 12px; } }
+@media (max-width: 768px) {
+  main .main-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; }
+    main .main-info .main-info__text h2 {
+      margin-top: 20px; }
+    main .main-info .main-info__counter .num {
+      font-size: 50px; }
+  main .main-button {
+    margin-top: 20px; }
+
+  footer {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; }
+    footer .right-box, footer .left-box {
+      width: 100%; } }
+@media (max-width: 992px) {
+  main .main-button {
+    font-size: 18px; }
+
+  footer .right-box, footer .left-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; }
+  footer .right-box .right-box__first {
+    margin: 10px; } }
+
+/*# sourceMappingURL=style.css.map */
