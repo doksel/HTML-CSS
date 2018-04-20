@@ -120,7 +120,7 @@ footer {
     margin: 20px; }
   footer .right-box .right-box__first {
     height: 85px;
-    width: 85px;
+    min-width: 85px;
     margin: 50px;
     font-size: 40px;
     border: solid #a3b3cb 3px;
